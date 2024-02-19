@@ -10,10 +10,13 @@ var ages  = ['9 Weeks', '12 Weeks', '3 Months',
              '4 Months', '2 Months', '14 Weeks',
              '6 Months', '10 Weeks', '8 Months'];
 
+var vaccines = [1,3,0,3,2,4,3,2]
+
 $('.kittens').find('li').each( function(i, el) {
   var img = $(el).find('img');
   var name = $(el).find('.name');
   var age = $(el).find('.age');
+  var vaccine = $(el).find('.vaccines');
 
   var w = 250;
   var h = 250;
@@ -21,4 +24,5 @@ $('.kittens').find('li').each( function(i, el) {
   img.attr('src', 'http://placekitten.com/'+w+'/'+h+'?image='+i);
   name.text(names[i]);
   age.text(ages[i]);
+  vaccine.text(vaccines[i]);
 });
