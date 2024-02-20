@@ -24,5 +24,5 @@ $('.kittens').find('li').each( function(i, el) {
   img.attr('src', 'http://placekitten.com/'+w+'/'+h+'?image='+i);
   name.text(names[i]);
   age.text(ages[i]);
-  vaccine.text(vaccines[i]);
+  vaccine.html('<strong>Vaccines: </strong>' + vaccines[i]);
 });
