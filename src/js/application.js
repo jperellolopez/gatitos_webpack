@@ -1,9 +1,8 @@
 import $ from './jquery-2.1.0.min.js';
 
-var names = ['Tiger', 'Samuel', 'Leeloo',
-             'Bella', 'Mo', 'Sly',
-             'Beezy', 'Maple', 'Rodney',
-             'Yonce', 'Reginald', 'Winifred'];
+var names = ['Tiger', 'Samuel', 'Leeloo', 'Bella',
+             'Mo', 'Sly', 'Beezy', 'Maple',
+             'Juan Antonio', 'Josema', 'Yuste', 'Elvan Anón'];
 
 var ages  = ['9 Weeks', '12 Weeks', '3 Months',
              '8 Weeks', '1 Year', '15 Weeks',
