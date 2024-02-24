@@ -9,7 +9,7 @@ var ages  = ['9 Weeks', '12 Weeks', '3 Months',
              '4 Months', '2 Months', '14 Weeks',
              '6 Months', '10 Weeks', '8 Months'];
 
-var vaccines = [1,3,0,3,2,4,3,2]
+var vaccines = [1,3,0,3,2,4,3,2,5,1,0,3]
 
 $('.kittens').find('li').each( function(i, el) {
   var img = $(el).find('img');
