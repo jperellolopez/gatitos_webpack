@@ -7,7 +7,7 @@ body {
   background: #eee4da;
   font-family: "Didact Gothic", sans-serif;
   margin: 0;
-  background-image: url("../img/background.png"); }
+  background-image: url("../img/cute.jpg");}
 
 a {
   color: #506f8e; }
@@ -35,13 +35,20 @@ a {
 .header {
   background: #aea4ad;
   border-bottom: 10px solid #ffffff;
-  padding: 1em; }
-  .header h1 {
+  padding: 1em;
+  }
+
+  .header h1  {
     color: #506f8e;
     font-family: "Ribeye Marrow", cursive;
     font-size: 3em;
     margin: .25em 0;
-    text-shadow: 1px 1px 0px #d9d0cb; }
+    text-shadow: 1px 1px 0px #d9d0cb; 
+    margin-left: 120px;
+  }
+  .logo{
+    float: left;
+  }
   .header nav {
     float: right; }
     .header nav a {
@@ -126,3 +133,4 @@ a {
   color: #d9d0cb;
   float: right;
   margin: 1em 0; }
+

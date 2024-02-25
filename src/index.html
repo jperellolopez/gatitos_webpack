@@ -8,28 +8,34 @@
 
     <!--link rel="stylesheet" href="css/application.css"-->
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Ribeye+Marrow' rel='stylesheet' type='text/css'>
+
+    <!--Añadimos link rel a bootstrap.min.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
     
   </head>
   <body>
+    <!--Añadimos link a bootstrap.bundle.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <header class="header">
       <div class="wrapper clearfix">
         <nav class="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="kittens.html">Kittens</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li> 
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="kittens.html">Kittens</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="kittens@cifpfbmoll.com">Contact</a></li> 
           </ul>
         </nav>
-        <h1>Kittens "R" Us</h1>
+        <img class="logo" src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg" height="70px" width="70px" />
+        <h1> Kittens "R" Us</h1>
       </div>
     </header>
 
     <div class="content">
       <div class="wrapper clearfix">
         <form class="search">
-          <input type="search" />
-          <button>Go</button>
+          <input type="search" placeholder="Buscar..."/>
+          <button type="button" class="btn btn-success">Go</button>
         </form>
 
         <h1>Newest Adoptables</h1>
@@ -41,6 +47,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -48,6 +55,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -55,6 +63,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -62,6 +71,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -69,6 +79,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -76,6 +87,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -83,6 +95,7 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
           </li>
           <li>
             <img class="kitten" />
@@ -90,10 +103,44 @@
               <label class="name"></label>
               <small class="age"></small>
             </footer>
+            <small class="vaccines"></small>
+          </li>
+          <li>
+            <img class="kitten" />
+            <footer>
+              <label class="name"></label>
+              <small class="age"></small>
+            </footer>
+            <small class="vaccines"></small>
+          </li>
+          <li>
+            <img class="kitten" />
+            <footer>
+              <label class="name"></label>
+              <small class="age"></small>
+            </footer>
+            <small class="vaccines"></small>
+          </li>
+          <li>
+            <img class="kitten" />
+            <footer>
+              <label class="name"></label>
+              <small class="age"></small>
+            </footer>
+            <small class="vaccines"></small>
+          </li>
+          <li>
+            <img class="kitten" />
+            <footer>
+              <label class="name"></label>
+              <small class="age"></small>
+            </footer>
+            <small class="vaccines"></small>
           </li>
         </ul>
       </div>
     </div>
+    
 
     <div class="subcontent">
       <div class="wrapper clearfix">
@@ -149,10 +196,39 @@
             <li><a href="https://tica.org/es/" target="_blank">Tica</a></li>
           </ul>
         </nav>
-        <div class="copy">&copy; 2014 Kittens "R" Us</div>
+        <div class="copy">&copy; 2024 Kittens "R" Us</div>
       </div>
     </footer>
     <!--script src="js/jquery-2.1.0.min.js"></script-->
     <!--script src="js/application.js"></script-->
+
+
+    <!--Formulario de contacto oculto-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
